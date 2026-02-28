@@ -97,4 +97,5 @@ def call_gcp():
         return render_template_string(HTML_TEMPLATE, response_data=f"Error: {str(e)}")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=443, ssl_context=('/home/ubuntu/cert.pem', '/home/ubuntu/key.pem'))
+    app.run(host="0.0.0.0", port=443, ssl_context=('cert.pem', 'key.pem'))
+
